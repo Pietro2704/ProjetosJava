@@ -4,16 +4,17 @@
         <title>Calculo IMC</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./style/style.css"/>
+        <link rel="stylesheet" href="style/style.css"/>
     </head>
     <body>
         <div class="card">
+            <h1>Calculo de IMC</h1>
             <form method="post" action="#">
                 <label>Peso: </label>
-                <input type="number" min="0" name="peso">
+                <input type="number" min="0" step="0.1" name="peso">
                 <br>
                 <label>Altura: </label>
-                <input type="number" min="0" name="altura">
+                <input type="number" min="0" step="0.01" name="altura">
                 <br>
                 <input type="submit" value="Calcular" name="enviar">
             </form>
